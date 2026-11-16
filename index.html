@@ -1,1 +1,876 @@
-<h1>Próximamente celoygabo.com</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celo & Gabo | Brisas del Lago - Maracaibo, Zulia</title>
+  <meta name="description" content="Disfruta en familia frente al Lago de Maracaibo en Brisas del Lago. Cervezas vestidas de novia bien frías, enramadas, comida, forros térmicos, tortas venezolanas y quesillos por encargo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-lago: #062849;
+      --azul-medio: #0b4f8a;
+      --turquesa: #00a8cc;
+      --turquesa-claro: #e0f7fa;
+      --sol-dorado: #ffb703;
+      --sol-brillante: #ffd166;
+      --arena: #fdf8ee;
+      --arena-oscura: #f3e6cc;
+      --verde-palma: #1b8a4b;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #1ebe5d;
+      --texto: #18293a;
+      --texto-suave: #4a6075;
+      --blanco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--texto);
+      background-color: var(--arena);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .brand-font {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    /* NAVEGACIÓN */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 40, 73, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--sol-dorado);
+      padding: 0.75rem 5%;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--blanco);
+    }
+
+    .nav-brand img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--sol-dorado);
+    }
+
+    .nav-brand span {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--sol-brillante), #48cae4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.25s;
+    }
+
+    nav a:hover {
+      color: var(--sol-brillante);
+    }
+
+    /* BOTONES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: var(--blanco);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-dark);
+    }
+
+    .btn-sol {
+      background: linear-gradient(135deg, var(--sol-dorado), #fb8500);
+      color: var(--azul-lago);
+    }
+
+    /* SECCIÓN INICIO (HERO) */
+    .hero {
+      background: linear-gradient(180deg, #062849 0%, #0b4f8a 52%, #00a8cc 100%);
+      color: var(--blanco);
+      padding: 4rem 5% 5.5rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .hero-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero-logo {
+      width: 230px;
+      max-width: 75vw;
+      border-radius: 24px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+      border: 4px solid var(--sol-dorado);
+      background: var(--azul-lago);
+    }
+
+    .badge-zulia {
+      display: inline-block;
+      background: rgba(255, 209, 102, 0.18);
+      border: 1px solid var(--sol-brillante);
+      color: var(--sol-brillante);
+      padding: 0.4rem 1.1rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+      max-width: 820px;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    }
+
+    .hero p.lead {
+      font-size: 1.15rem;
+      max-width: 700px;
+      color: #e6f6ff;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    /* DESTACADOS EN INICIO */
+    .hero-products-title {
+      font-size: 1.5rem;
+      color: var(--sol-brillante);
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.25rem;
+      text-align: left;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 18px;
+      padding: 1.4rem;
+      transition: transform 0.25s;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .hero-card .icon {
+      font-size: 2.1rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .hero-card h3 {
+      color: var(--sol-brillante);
+      font-size: 1.25rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-card p {
+      font-size: 0.93rem;
+      color: #f0f9ff;
+    }
+
+    /* OLA SEPARADORA */
+    .wave-divider {
+      display: block;
+      width: 100%;
+      height: 55px;
+      margin-top: -54px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* SECCIONES GENERALES */
+    section.content-section {
+      padding: 4.5rem 5%;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header span {
+      color: var(--turquesa);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.88rem;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+      color: var(--azul-lago);
+    }
+
+    /* QUIÉNES SOMOS */
+    .about-box {
+      background: var(--blanco);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 12px 35px rgba(6, 40, 73, 0.08);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2.5rem;
+      align-items: center;
+      border-left: 6px solid var(--turquesa);
+    }
+
+    .about-text h3 {
+      font-size: 1.7rem;
+      color: var(--azul-medio);
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      color: var(--texto-suave);
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .highlight-pill {
+      background: var(--turquesa-claro);
+      color: var(--azul-lago);
+      padding: 0.8rem 1rem;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    /* SERVICIOS Y PRODUCTOS */
+    .services-bg {
+      background: linear-gradient(180deg, var(--arena) 0%, var(--arena-oscura) 100%);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .service-card {
+      background: var(--blanco);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(6, 40, 73, 0.07);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 235px;
+      object-fit: cover;
+    }
+
+    .service-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tag-encargo {
+      align-self: flex-start;
+      background: var(--sol-brillante);
+      color: var(--azul-lago);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      margin-bottom: 0.6rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      color: var(--azul-lago);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: var(--texto-suave);
+      font-size: 0.96rem;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .amenities-bar {
+      margin-top: 2.5rem;
+      background: var(--azul-lago);
+      color: var(--blanco);
+      border-radius: 20px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .amenity-item span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .amenity-item h4 {
+      font-family: 'Fredoka', sans-serif;
+      color: var(--sol-brillante);
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .amenity-item p {
+      font-size: 0.9rem;
+      color: #d7ecff;
+    }
+
+    /* GALERÍA */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 270px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(6, 40, 73, 0.9));
+      color: var(--blanco);
+      padding: 1.2rem 1rem 0.8rem;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    /* CONTACTO */
+    .contact-section {
+      background: linear-gradient(135deg, var(--azul-lago) 0%, var(--azul-medio) 100%);
+      color: var(--blanco);
+    }
+
+    .contact-section .section-header h2 {
+      color: var(--blanco);
+    }
+
+    .contact-section .section-header span {
+      color: var(--sol-brillante);
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 2.5rem;
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .contact-info-item .c-icon {
+      font-size: 1.6rem;
+      background: rgba(255, 209, 102, 0.2);
+      padding: 0.6rem;
+      border-radius: 12px;
+    }
+
+    .contact-info-item h4 {
+      color: var(--sol-brillante);
+      font-size: 1.05rem;
+    }
+
+    .contact-info-item p {
+      color: #e6f4ff;
+      font-size: 0.98rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #041b33;
+      color: #a9c4de;
+      text-align: center;
+      padding: 1.8rem 5%;
+      font-size: 0.9rem;
+      border-top: 2px solid rgba(255, 183, 3, 0.3);
+    }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: var(--whatsapp);
+      color: var(--blanco);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 650px) {
+      nav ul {
+        gap: 0.9rem;
+        justify-content: center;
+      }
+      .nav-container {
+        justify-content: center;
+      }
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="nav-container">
+      <a href="#inicio" class="nav-brand">
+        <img src="logo.jpg" alt="Logo Celo & Gabo Brisas del Lago" />
+        <span>Celo & Gabo</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Quiénes Somos</a></li>
+          <li><a href="#servicios">Servicios y Productos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <img src="logo.jpg" alt="Celo & Gabo Brisas del Lago" class="hero-logo" />
+        <span class="badge-zulia">🌴 Brisas del Lago • Maracaibo, Estado Zulia</span>
+        <h1>Sol, brisa del Lago y el mejor ambiente familiar</h1>
+        <p class="lead">
+          Ven a compartir frente al Lago de Maracaibo con enramadas cómodas, buena música, las cervezas más frías de Venezuela y nuestros deliciosos productos artesanales por encargo.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/584146684732?text=Hola%20Josefa,%20quisiera%20informaci%C3%B3n%20sobre%20Brisas%20del%20Lago%20Celo%20%26%20Gabo" target="_blank" class="btn btn-whatsapp">
+            💬 Escribir por WhatsApp
+          </a>
+          <a href="#servicios" class="btn btn-sol">
+            🍻 Ver Productos y Servicios
+          </a>
+        </div>
+      </div>
+
+      <h2 class="hero-products-title">✨ Todo lo que tenemos para ti</h2>
+      <div class="hero-grid">
+        <div class="hero-card">
+          <span class="icon">🍺</span>
+          <h3>Vestidas de Novia</h3>
+          <p>Las cervezas más frías de Venezuela, servidas al punto de escarcha frente al lago.</p>
+        </div>
+        <div class="hero-card">
+          <span class="icon">🧊</span>
+          <h3>Forros Térmicos</h3>
+          <p>Por encargo: conserva el frío de tu botella por más tiempo en playa, piscina o fiesta.</p>
+        </div>
+        <div class="hero-card">
+          <span class="icon">🍰</span>
+          <h3>Tortas Venezolanas</h3>
+          <p>Esponjosas, tradicionales y marmoleadas preparadas por encargo con sabor casero.</p>
+        </div>
+        <div class="hero-card">
+          <span class="icon">🍮</span>
+          <h3>Quesillos Caseros</h3>
+          <p>Cremosos y con su caramelo perfecto, hechos por encargo para tus celebraciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OLA DECORATIVA -->
+  <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="#fdf8ee" d="M0,40 C360,110 1080,-20 1440,50 L1440,100 L0,100 Z"></path>
+  </svg>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <span>Nuestra Esencia Zuliana</span>
+        <h2>Quiénes Somos</h2>
+      </div>
+      <div class="about-box">
+        <div class="about-text">
+          <h3>Una familia dedicada a tu disfrute frente al Lago</h3>
+          <p>
+            En <strong>Celo & Gabo</strong> somos una familia apasionada por el turismo local y la calidez de nuestra tierra. Nacimos con el propósito de brindar un servicio especial a orillas del majestuoso <strong>Lago de Maracaibo</strong>.
+          </p>
+          <p>
+            Trabajamos cada día para hacer de <strong>Brisas del Lago</strong> el mejor lugar de encuentro para toda la familia: un espacio seguro, acogedor y lleno de alegría donde los niños, padres y amigos puedan desconectarse, disfrutar de vistas hermosas y sentirse como en casa.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-pill">👨‍👩‍👧‍👦 Ambiente 100% Familiar</div>
+            <div class="highlight-pill">🌅 Vistas al Lago de Maracaibo</div>
+            <div class="highlight-pill">🛖 Enramadas a la Orilla</div>
+            <div class="highlight-pill">❤️ Atención Personalizada</div>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="casa1.jpeg" alt="Enramadas frente al Lago de Maracaibo en Brisas del Lago" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS Y PRODUCTOS -->
+  <section id="servicios" class="content-section services-bg">
+    <div class="container">
+      <div class="section-header">
+        <span>Para disfrutar aquí o llevar a casa</span>
+        <h2>Nuestros Servicios y Productos</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- FORROS -->
+        <div class="service-card">
+          <img src="forros.png" alt="Forros térmicos para cervezas Celo y Gabo" />
+          <div class="service-card-body">
+            <span class="tag-encargo">📦 Por Encargo</span>
+            <h3>Forros Térmicos para Cervezas</h3>
+            <p>Diseños resistentes (jeans, camuflados y más) con el sello de Celo & Gabo. Protegen tu botella y mantienen tu cerveza bien fría por mucho más tiempo.</p>
+            <a href="https://wa.me/584146684732?text=Hola,%20quiero%20encargar%20Forros%20T%C3%A9rmicos%20de%20Celo%20%26%20Gabo" target="_blank" class="btn btn-whatsapp">Pedir Forros por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- TORTAS -->
+        <div class="service-card">
+          <img src="torta1.jpg" alt="Tortas Venezolanas por encargo" />
+          <div class="service-card-body">
+            <span class="tag-encargo">🎂 Por Encargo</span>
+            <h3>Tortas Venezolanas</h3>
+            <p>Deliciosas tortas tradicionales de vainilla, marmoleadas y recetas clásicas venezolanas, recién horneadas para tus reuniones, cumpleaños o meriendas.</p>
+            <a href="https://wa.me/584146684732?text=Hola,%20quisiera%20encargar%20una%20Torta%20Venezolana" target="_blank" class="btn btn-whatsapp">Encargar Torta</a>
+          </div>
+        </div>
+
+        <!-- QUESILLOS -->
+        <div class="service-card">
+          <img src="quesillo.jpeg" alt="Quesillos venezolanos caseros por encargo" />
+          <div class="service-card-body">
+            <span class="tag-encargo">🍮 Por Encargo</span>
+            <h3>Quesillos Venezolanos</h3>
+            <p>El auténtico quesillo venezolano con textura cremosa, huequitos tradicionales y baño de caramelo dorado. El postre favorito de toda la familia.</p>
+            <a href="https://wa.me/584146684732?text=Hola,%20quisiera%20encargar%20un%20Quesillo%20Venezolano" target="_blank" class="btn btn-whatsapp">Encargar Quesillo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICIOS EN LA PLAYA -->
+      <div class="amenities-bar">
+        <div class="amenity-item">
+          <span>🍻</span>
+          <h4>Cervezas Vestidas de Novia</h4>
+          <p>Las más frías de Venezuela, listas para refrescar tu día frente al lago.</p>
+        </div>
+        <div class="amenity-item">
+          <span>🍽️</span>
+          <h4>Comida y Pasapalos</h4>
+          <p>Platos y opciones deliciosas para compartir en familia junto a la brisa.</p>
+        </div>
+        <div class="amenity-item">
+          <span>🚿</span>
+          <h4>Enramadas y Servicio de Baño</h4>
+          <p>Espacios cómodos a la orilla con servicio de baño para tu total comodidad.</p>
+        </div>
+        <div class="amenity-item">
+          <span>🎶</span>
+          <h4>Música Agradable</h4>
+          <p>El mejor ambiente musical para relajarse y disfrutar en armonía.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <span>Nuestros espacios y sabores</span>
+        <h2>Galería Brisas del Lago</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="casa1.jpeg" alt="Enramada y orilla de Brisas del Lago" />
+          <div class="gallery-caption">Enramadas frente al Lago de Maracaibo</div>
+        </div>
+        <div class="gallery-item">
+          <img src="casa2.png" alt="Espacios familiares en Brisas del Lago" />
+          <div class="gallery-caption">Ambiente familiar a la orilla del lago</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago1.png" alt="Vista del Lago de Maracaibo" />
+          <div class="gallery-caption">Vistas tranquilas en Brisas del Lago</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago2.png" alt="Horizonte del Lago de Maracaibo" />
+          <div class="gallery-caption">Paisaje marabino frente a la costa</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago3.png" alt="Playa y arena en Brisas del Lago" />
+          <div class="gallery-caption">Orilla ideal para compartir en familia</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago4.png" alt="Brisa del Lago de Maracaibo" />
+          <div class="gallery-caption">Disfrutando la brisa del Zulia</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago5.jpg" alt="Atardecer en el Lago de Maracaibo" />
+          <div class="gallery-caption">Hermosas vistas del Lago</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago6.png" alt="Costa de Brisas del Lago" />
+          <div class="gallery-caption">Tu punto de encuentro en Maracaibo</div>
+        </div>
+        <div class="gallery-item">
+          <img src="lago7.png" alt="Sol sobre el Lago de Maracaibo" />
+          <div class="gallery-caption">Sol radiante frente al agua</div>
+        </div>
+        <div class="gallery-item">
+          <img src="forros.png" alt="Forros térmicos para cervezas" />
+          <div class="gallery-caption">Forros Térmicos Celo & Gabo</div>
+        </div>
+        <div class="gallery-item">
+          <img src="torta1.jpg" alt="Torta tradicional venezolana" />
+          <div class="gallery-caption">Tortas venezolanas por encargo</div>
+        </div>
+        <div class="gallery-item">
+          <img src="torta2.png" alt="Torta marmoleada artesanal" />
+          <div class="gallery-caption">Torta marmoleada casera</div>
+        </div>
+        <div class="gallery-item">
+          <img src="torta3.jpg" alt="Variedad de tortas por encargo" />
+          <div class="gallery-caption">Repostería artesanal venezolana</div>
+        </div>
+        <div class="gallery-item">
+          <img src="quesillo.jpeg" alt="Quesillo venezolano casero" />
+          <div class="gallery-caption">Quesillos caseros por encargo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="content-section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span>¡Te esperamos con los brazos abiertos!</span>
+        <h2>Contacto y Ubicación</h2>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <div class="contact-info-item">
+            <span class="c-icon">👩🏽</span>
+            <div>
+              <h4>Atención Directa</h4>
+              <p>Josefa Segovia</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="c-icon">📍</span>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Brisas del Lago, frente al Lago de Maracaibo – Estado Zulia, Venezuela.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="c-icon">📱</span>
+            <div>
+              <h4>WhatsApp y Encargos</h4>
+              <p>+58 414-6684732</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <h3 style="font-size: 1.5rem; color: var(--sol-brillante); margin-bottom: 0.8rem;">
+            ¿Quieres reservar una enramada o hacer un encargo?
+          </h3>
+          <p style="color: #e6f4ff; margin-bottom: 1.5rem; font-size: 0.96rem;">
+            Escríbenos directo al WhatsApp para apartar tu espacio familiar o encargar tus forros térmicos, tortas y quesillos.
+          </p>
+          <a href="https://wa.me/584146684732?text=Hola%20Josefa,%20me%20gustar%C3%ADa%20hacer%20una%20consulta%20en%20Celo%20%26%20Gabo%20Brisas%20del%20Lago" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+            💬 Chatear con Josefa Segovia
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2026 <strong>Celo & Gabo – Brisas del Lago</strong>. Todos los derechos reservados.</p>
+    <p style="margin-top: 0.3rem; font-size: 0.82rem;">Maracaibo, Estado Zulia • Turismo familiar frente al Lago</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/584146684732?text=Hola%20Josefa,%20vengo%20de%20la%20p%C3%A1gina%20web%20celoygabo.com" target="_blank" class="whatsapp-float" title="Contáctanos por WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>
